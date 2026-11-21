@@ -56,15 +56,15 @@ header.solid{background:rgba(37,38,37,.96);box-shadow:0 2px 18px rgba(0,0,0,.18)
 
 /* Hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;padding:120px 0 80px;
-  background:var(--grafite) url('assets/hero.jpg') center/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(37,38,37,.92) 0%,rgba(86,28,43,.82) 55%,rgba(112,38,56,.55) 100%)}
-.hero .wrap{position:relative}
+  background:var(--grafite) url('assets/hero.jpg') right center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(37,38,37,.95) 0%,rgba(37,38,37,.88) 32%,rgba(37,38,37,.45) 55%,rgba(37,38,37,0) 75%)}
+.hero .wrap{position:relative;width:100%}
 .hero-logo{height:84px;width:auto;margin-bottom:28px}
-.hero h1{color:#fff;font-size:clamp(2.3rem,5.4vw,4rem);max-width:820px;margin-bottom:22px}
+.hero h1{color:#fff;font-size:clamp(2.2rem,4.6vw,3.6rem);max-width:640px;margin-bottom:22px}
 .hero h1 em{font-style:normal;color:var(--dourado)}
-.hero p{font-size:1.18rem;max-width:620px;opacity:.9;margin-bottom:36px}
+.hero p{font-size:1.15rem;max-width:540px;opacity:.9;margin-bottom:36px}
 .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-.pilares{display:flex;gap:0;margin-top:64px;flex-wrap:wrap;border-top:1px solid rgba(185,149,79,.45);padding-top:24px;max-width:720px}
+.pilares{display:flex;gap:0;margin-top:64px;flex-wrap:wrap;border-top:1px solid rgba(185,149,79,.45);padding-top:24px;max-width:560px}
 .pilares span{font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--dourado);padding-right:22px;margin-right:22px;border-right:1px solid rgba(255,255,255,.25)}
 .pilares span:last-child{border:0}
 
@@ -172,6 +172,7 @@ footer{background:var(--grafite);color:rgba(255,255,255,.7);padding:48px 0 32px;
   .step::after{display:none}
   .difs{grid-template-columns:1fr 1fr}
 }
+@media (max-width:900px){.hero{background-position:70% center}.hero::before{background:linear-gradient(180deg,rgba(37,38,37,.82) 0%,rgba(37,38,37,.9) 100%)}}
 @media (max-width:600px){
   body{font-size:16px}
   .steps,.difs{grid-template-columns:1fr}
@@ -204,7 +205,6 @@ footer{background:var(--grafite);color:rgba(255,255,255,.7);padding:48px 0 32px;
 
 <section class="hero" id="inicio">
   <div class="wrap">
-    <img class="hero-logo" src="assets/simbolo.png" alt="Símbolo Essência do Varejo">
     <span class="eyebrow">Consultoria em Gestão e Performance</span>
     <h1>Estratégia que vira ação. <em>Gestão que gera resultados.</em></h1>
     <p>Apoiamos redes e lojas a organizar a operação, desenvolver lideranças e decidir com base em dados, com acompanhamento até o resultado aparecer.</p>
